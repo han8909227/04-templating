@@ -16,9 +16,8 @@ Article.prototype.toHtml = function() {
   //       - Get your template from the DOM.
   //       - Now "compile" your template with Handlebars.
 
-  var template = $('article-temlate').html();
-
-  var templateRender = Handlebars.complile(template);
+  var template = $('#article-template').html();
+  var templateRender = Handlebars.compile(template);
 
   // REVIEW: If your template will use properties that aren't on the object yet, add them.
   //   Since your template can't hold any JS logic, we need to execute the logic here.

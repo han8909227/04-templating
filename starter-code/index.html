@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <title>Lab 4</title>
@@ -21,17 +22,19 @@
     -->
 
     <script id="article-template" type="text/x-handlebars-template">
-      <header>
+      <article data-author='{{author}}' data-category='{{category}}'>
+      <section>
       <h1>{{title}}</h1>
       <div class="byline">
-        By<address><a href ="">{{Author Name}}</a></address>
-        published<time pubdate date="2000-01-01">{{publishedOn}}</time>
+        By <address><a href ='{{{authorUrl}}}'>{{author}}</a></address>
+        <time pubdate date="2000-01-01">{{publishStatus}}</time>
       </div>
-    </header>
+    </section>
     <section class="article-body">{{{body}}}</section>
-    <a href="#" class="read-on">Read on </a>
-
+    <a href="#" class="read-on">Read on</a>
+  </article>
     </script>
+
 
   </head>
   <body>
